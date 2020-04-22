@@ -1,6 +1,6 @@
-package org.devops
+#!groovy
 
-def PipelineCall(String type, Map map) {
+def call(String type, Map map) {
     if (type == 'maven') {
         pipeline {
             //在任何可用的代理上执行Pipeline
